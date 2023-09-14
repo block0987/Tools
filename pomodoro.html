@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ポモドーロタイマー</title>
+    <meta name="description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta name="keywords" content="ポモドーロタイマー, タイムマネジメント, 作業効率, 集中力">
+    <meta name="author" content="block0987">
+    <link rel="canonical" href="tmp_url">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+
+    <!-- OGP -->
+    <meta property="og:title" content="ポモドーロタイマー">
+    <meta property="og:description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta property="og:url" content="tmp_url">
+    <meta property="og:image" content="img/favicon.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ポモドーロタイマー">
+    <meta name="twitter:description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta name="twitter:image" content="img/favicon.png">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/pomodoro.ico">
+
+    <link rel="stylesheet" href="CSS/pomodoro.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+                <span id="pomodoroCount">0</span>
+            </div>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="config">
+                <div>
+                    <label for="pomodoroTime">作業時間</label>
+                    <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
+                </div>
+                <div>
+                    <label for="breakTime">休憩時間</label>
+                    <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
+                </div>
+                <div>
+                    <label for="longBreakTime">長休憩時間</label>
+                    <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
+                </div>
+                <div>
+                    <label for="longBreakInterval">間隔</label>
+                    <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
+                </div>
+                <div>
+                    <button id="saveConfig">設定する</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/common.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/pomodoro.js"></script>
+</body>
+
+</html>

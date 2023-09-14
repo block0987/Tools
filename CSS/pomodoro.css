@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url(style.css);
+
+.timer {
+    font: monospace;
+    font-size: var(--font-size-7);
+    font-weight: 600;
+    font-feature-settings: "tnum";
+    margin: var(--spacer-4) 0;
+}
